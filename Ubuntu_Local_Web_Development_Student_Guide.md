@@ -224,6 +224,32 @@ Main configuration:
 
 ```text
 /etc/apache2/apache2.conf
+
+What it does:
+This is the master configuration file for Apache. When Apache starts, it reads this file first (on Debian/Ubuntu systems). Everything else is usually included from here.
+
+What it contains:
+
+Global server settings (timeouts, keep-alive, server tokens)
+
+<Directory> blocks defining permissions (e.g., /var/www/, /)
+
+User/Group Apache runs as (www-data)
+
+Include statements that pull in other config directories:
+
+apache
+IncludeOptional mods-enabled/*.load
+IncludeOptional mods-enabled/*.conf
+IncludeOptional conf-enabled/*.conf
+IncludeOptional sites-enabled/*.conf
+Why we use it:
+
+It's the central place to change server-wide behavior.
+
+It "glues" together all the other config folders.
+
+You rarely edit it, but you must know it exists — because it's what loads everything else.
 ```
 
 Available websites:
