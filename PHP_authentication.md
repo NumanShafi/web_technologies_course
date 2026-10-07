@@ -438,7 +438,7 @@ Create a dedicated application user:
 
 ```sql
 CREATE USER 'authuser'@'localhost'
-IDENTIFIED BY 'YOUR_PASSWORD_HERE';
+IDENTIFIED BY 'DevPassword123!';
 ```
 
 Give access only to our database:
