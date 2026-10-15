@@ -242,6 +242,12 @@ $options = [
 $pdo = new PDO($dsn, $username, $password, $options);
 ```
 
+DSN: Stands for Data Source Name.
+PDO: Stands for PHP Data Objects.
+
+<img width="871" height="775" alt="image" src="https://github.com/user-attachments/assets/600b248f-e281-4fe2-9853-4d3f0c9372cc" />
+
+
 Update the username and password to match your local development database. Do not copy a placeholder password literally.
 
 If your existing application uses `mysqli` rather than PDO, either adapt the examples to `mysqli` or use the same database-access style consistently throughout your project. Do not mix connection variables without understanding which file creates them.
