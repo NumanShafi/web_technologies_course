@@ -331,6 +331,9 @@ function e(?string $value): string
 
 Save the file.
 
+<img width="786" height="588" alt="image" src="https://github.com/user-attachments/assets/0c26f90a-1fdf-4621-9de0-8d57e5c3be67" />
+
+
 ### Understand the important parts
 
 **`session_start()`**
