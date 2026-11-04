@@ -68,8 +68,6 @@ cd ~/projects/student_management
 # On Linux / macOS:
 python3 -m venv venv
 
-# On Windows:
-py -m venv venv
 ```
 
 ##### Breakdown of `python3 -m venv venv`:
